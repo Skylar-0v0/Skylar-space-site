@@ -1,0 +1,51 @@
+{
+    "bsonType": "object",
+    "required": ["message"],
+    "permission": {
+        "read": "doc.public == true || doc.sender == auth.uid",
+        "create": "auth.uid != null",
+        "update": false,
+        "delete": "doc.sender == auth.uid"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "sender": {
+            "bsonType": "string",
+            "title": "留言发送者",
+            "foreignKey": "uni-id-users._id",
+            "forceDefaultValue": {
+                "$env": "uid"
+            }
+        },
+        "message": {
+            "bsonType": "string",
+            "title": "留言",
+            "trim": "both",
+            "maxLength": 500,
+            "errorMessage": {
+                "required": "留言不能为空",
+                "maxLength": "留言字数过长"
+            }
+        },
+        "public": {
+            "bsonType": "bool",
+            "title": "公开状态",
+            "forceDefaultValue": true,
+            "permission": {
+                "write": false
+            }
+        },
+        "createdAt": {
+            "bsonType": "timestamp",
+            "title": "发送时间",
+            "forceDefaultValue": {
+                "$env": "now"
+            },
+            "permission": {
+                "write": false
+            }
+        }
+    }
+}

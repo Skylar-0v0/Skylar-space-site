@@ -1,0 +1,71 @@
+{
+    "bsonType": "object",
+    "required": [],
+    "permission": {
+        "read": "doc.status == 1",
+        "create": false,
+        "update": false,
+        "delete": false
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "title": {
+            "bsonType": "string",
+            "title": "标题"
+        },
+        "subtitle": {
+            "bsonType": "string",
+            "title": "副标题"
+        },
+        "coverImg": {
+            "bsonType": "string",
+            "title": "封面",
+            "description": "封面图片地址"
+        },
+        "content": {
+            "bsonType": "string",
+            "title": "内容"
+        },
+        "summary": {
+            "bsonType": "string",
+            "title": "摘要"
+        },
+        "imgUrls": {
+            "bsonType": "array",
+            "title": "图片地址",
+            "description": "文章所用图片的地址数组",
+            "permission": {
+                "read": false
+            }
+        },
+        "status": {
+            "bsonType": "int",
+            "title": "状态",
+            "description": "0：未发布,1：已发布,2：隐藏"
+        },
+        "public_date": {
+            "bsonType": "number",
+            "title": "发布时间"
+        },
+        "create_date": {
+            "bsonType": "timestamp",
+            "title": "创建时间",
+            "permission": {
+                "read": false
+            }
+        },
+        "view_count": {
+            "bsonType": "int",
+            "title": "浏览次数"
+        },
+        "click_count": {
+            "bsonType": "int",
+            "title": "点击次数",
+            "permission": {
+                "read": false
+            }
+        }
+    }
+}

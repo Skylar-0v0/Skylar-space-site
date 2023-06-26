@@ -1,0 +1,57 @@
+{
+    "bsonType": "object",
+    "required": [],
+    "permission": {
+        "read": true,
+        "create": false,
+        "update": false,
+        "delete": "doc._id == auth.uid"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "name": {
+            "bsonType": "string",
+            "trim": "both",
+            "maxLength": 15,
+            "title": "网站名称",
+            "errorMessage": {
+                "required": "网站名称必填",
+                "maxLength": "网站名称不能大于15字符"
+            }
+        },
+        "content": {
+            "bsonType": "string",
+            "trim": "both",
+            "maxLength": 20,
+            "title": "网站介绍",
+            "errorMessage": {
+                "required": "网站介绍必填",
+                "maxLength": "网站介绍不能大于20个字符"
+            }
+        },
+        "url": {
+            "bsonType": "string",
+            "format": "url",
+            "title": "网站Url",
+            "errorMessage": {
+                "required": "网站Url必填",
+                "format": "网站Url不合法"
+            }
+        },
+        "logo": {
+            "bsonType": "string",
+            "format": "url",
+            "title": "头像Url",
+            "errorMessage": {
+                "required": "头像Url必填",
+                "format": "头像Url不合法"
+            }
+        },
+        "public": {
+            "bsonType": "bool",
+            "title": "是否公开"
+        }
+    }
+}

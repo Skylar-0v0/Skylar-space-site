@@ -1,0 +1,15 @@
+{
+    "pages": [{
+        "path": "pages/main/main" // 指定首页 2
+    }],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "Skylar的空间站点",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "navigationStyle": "custom", // 取消原生导航栏后 
+        "app-plus": { // 取消标题栏
+            "titleView": false
+        }
+    },
+    "uniIdRouter": {}
+}

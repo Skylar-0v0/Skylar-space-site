@@ -1,0 +1,15 @@
+{
+  "name": "data-statistics",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {},
+    "uni-cloud-redis": {}
+  },
+  "cloudfunction-config": {
+    "triggers": [{
+      "name": "data-statistics",
+      "type": "timer",
+      "config": "0 55 23 * * * *"
+    }]
+  }
+}

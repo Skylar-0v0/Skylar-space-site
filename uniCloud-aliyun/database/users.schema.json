@@ -1,0 +1,29 @@
+{
+  "bsonType": "object",
+  "required": [],
+  "permission": {
+    "read": true,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "email": {
+      "description": "邮箱",
+      "bsonType": "string",
+      "permission": {
+        "read": false
+      }
+    },
+    "hash": {
+      "description": "密码哈希",
+      "bsonType": "string",
+      "permission": {
+        "read": false
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "myBlog",
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.12",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "uni-config-center": "file:../../../uni_modules/uni-config-center/uniCloud/cloudfunctions/common/uni-config-center",
+    "uni-id-common": "file:../../../uni_modules/uni-id-common/uniCloud/cloudfunctions/common/uni-id-common",
+    "uni-captcha": "file:../../../uni_modules/uni-captcha/uniCloud/cloudfunctions/common/uni-captcha"
+  },
+  "extensions": {
+    "uni-cloud-jql": {},
+    "uni-cloud-redis": {}
+  }
+}

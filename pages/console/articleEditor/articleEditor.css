@@ -1,0 +1,31 @@
+button {
+    margin: 0 10px;
+    transition: 0.75s;
+    padding: 0 20px;
+    border-radius: 50px;
+    height: 35px;
+    color: var(--color-font);
+    font-size: 13px;
+    background: none;
+}
+
+.but-theme-1 {
+    background-color: var(--color-theme-1);
+    border: 1px solid var(--color-theme-1);
+    color: var(--color-but-font);
+}
+
+.but-warn {
+    background-color: var(--color-warn);
+    border: 1px solid var(--color-warn);
+    color: var(--color-but-font);
+}
+
+.but-none {
+    border: 1px solid var(--color-line);
+    color: var(--color-font);
+}
+
+.title {
+    margin-top: 15px;
+}

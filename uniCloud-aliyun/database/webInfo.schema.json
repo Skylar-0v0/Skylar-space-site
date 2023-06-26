@@ -1,0 +1,60 @@
+{
+    "bsonType": "object",
+    "required": [],
+    "permission": {
+        "read": "doc._id == 'main'",
+        "create": false,
+        "update": false,
+        "delete": false
+    },
+    "properties": {
+        "_id": {
+            "description": "统计日期"
+        },
+        "web_view_count": {
+            "bsonType": "number",
+            "title": "网站浏览量"
+        },
+        "messages_count": {
+            "bsonType": "number",
+            "title": "留言数量"
+        },
+        "user_count": {
+            "bsonType": "number",
+            "title": "用户数量"
+        },
+        "links_count": {
+            "bsonType": "number",
+            "title": "友情链接数量"
+        },
+        "articles_count": {
+            "bsonType": "number",
+            "title": "文章数量"
+        },
+        "click": {
+            "bsonType": "object",
+            "title": "点击量",
+            "properties": {
+                "web": {
+                    "bsonType": "number",
+                    "title": "网站点击量"
+                },
+                "guestbook": {
+                    "bsonType": "number",
+                    "title": "留言板点击量"
+                },
+                "link": {
+                    "bsonType": "number",
+                    "title": "友情链接点击量"
+                },
+                "development_log": {
+                    "bsonType": "number",
+                    "title": "开发日志点击量"
+                }
+            },
+            "permission": {
+                "read": false
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "bsonType": "object",
+    "required": [],
+    "permission": {
+        "read": "doc.public == true",
+        "create": false,
+        "update": false,
+        "delete": false
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "title": {
+            "description": "标题"
+        },
+        "subtitle": {
+            "description": "副标题"
+        },
+        "cover": {
+            "description": "封面"
+        },
+        "createdAt": {
+            "description": "创建时间"
+        },
+        "html": {
+            "description": "博客主体"
+        },
+        "view_count": {
+            "description": "浏览次数"
+        },
+        "summary": {
+            "description": "摘要"
+        },
+        "public": {
+            "description": "是否公开"
+        }
+    }
+}

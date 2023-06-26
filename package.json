@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "highlight.js": "^11.8.0",
+    "js-md5": "^0.7.3",
+    "markdown-it": "^13.0.1",
+    "uni-read-pages": "^1.0.5",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.0.2"
+  }
+}

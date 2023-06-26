@@ -1,0 +1,195 @@
+.luminousBox {
+    /*盒子交互效果*/
+    transition: 0.75s;
+}
+
+.luminousBox:hover {
+    background-color: var(--color-theme-1);
+    color: var(--color-but-font);
+    box-shadow: 0 0 10px var(--color-theme-1), 0 0 30px var(--color-theme-1);
+}
+
+.pageContainer {
+    width: 95%;
+    min-height: 80vh;
+    margin: 30px auto;
+    max-width: 1050px;
+}
+
+.car {
+    background: var(--color-box-2);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px var(--color-shadow);
+    transition: 2s;
+}
+
+.full {
+    top: 0;
+    background: var(--color-background-mask);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.op-8 {
+    opacity: 0.8;
+}
+
+.op-5 {
+    opacity: 0.5;
+}
+
+.w-h-100p {
+    width: 100%;
+    height: 100%;
+}
+
+.w-h-100 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.h-100p {
+    height: 100%;
+}
+
+.border-t {
+    border: 1px solid var(--color-line);
+}
+
+.position-a {
+    position: absolute;
+}
+
+.position-f {
+    position: fixed;
+}
+
+.position-r {
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--color-bar-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--color-theme-1), transparent);
+}
+
+.flex {
+    display: flex;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wait {
+    color: var(--color-wait);
+    border: 1px solid var(--color-wait);
+}
+
+.fade-enter-active {
+    transition: 1s ease-out;
+}
+
+.fade-leave-active {
+    transition: 0.5s ease-in;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.blur-enter-active,
+.mainFade-enter-active {
+    transition: var(--active-enter-time, 0.5s ease-out);
+}
+
+.blur-leave-active,
+.mainFade-leave-active {
+    transition: var(--active-leave-time, 0.5s ease-in);
+}
+
+.blur-enter-from,
+.blur-leave-to {
+    filter: blur(5px);
+    opacity: 0;
+}
+
+.mainFade-enter-from {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.mainFade-enter-to {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.mainFade-leave-to {
+    opacity: 0;
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+    transition: 1s ease;
+}
+
+.zoom-enter-from,
+.zoom-leave-to {
+    width: 0px;
+    height: 0px;
+    filter: var(--active-blur, blur(0px));
+}
+
+.zoom-enter-to,
+.zoom-leave-from {
+    width: var(--active-width);
+    height: var(--active-height);
+}
+
+
+/* 对移动中的元素应用的过渡 */
+
+.list-move,
+.list-enter-active,
+.list-leave-active {
+    transition: 1s ease-in-out;
+}
+
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+
+/* 确保将离开的元素从布局流中删除
+    以便能够正确地计算移动的动画。 */
+
+.list-leave-active {
+    width: 95%;
+    max-width: 1050px;
+    position: absolute;
+}
