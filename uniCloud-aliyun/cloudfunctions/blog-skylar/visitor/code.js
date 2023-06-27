@@ -2,8 +2,8 @@ let Core = require('@alicloud/pop-core')
 const uniCaptcha = require('uni-captcha')
 const redis = uniCloud.redis()
 const env = {
-    ACCESS_KEY_ID: 'LTAI5tEmHUPTRrhdmUY84Hit',
-    ACCESS_KEY_SECRET: 'gLLPz6gfaNr1iRuI8tgdlNmBktIoc2'
+    ACCESS_KEY_ID: '',
+    ACCESS_KEY_SECRET: ''
 }
 module.exports = async(args, db, payload, ctx) => {
     let {
